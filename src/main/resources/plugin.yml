@@ -1,0 +1,15 @@
+name: QualityArmoryPlaceholderAddon
+version: '${project.version}'
+main: cn.chengzhiya.qualityarmoryplaceholderaddon.Main
+api-version: '1.20'
+load: STARTUP
+softdepend: [ PlaceholderAPI, QualityArmory ]
+commands:
+  qualityarmoryplaceholderaddonreload:
+    description: 重载命令
+    permission: qualityarmoryplaceholderaddon.op
+
+permissions:
+  qualityarmoryplaceholderaddon.op:
+    description: 管理员权限
+    default: op
